@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Swasthya Ann</label>
+      <ul>
+        <li><a class="active" href="#">October
+
+        </a></li>
+        <li><svg class =" calendar" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z"></path></svg></li>
+        
+        <svg class =" bell-icon" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707A.996.996 0 0 0 3 16v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a.996.996 0 0 0-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707A.996.996 0 0 0 7 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zm-7 5a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22z"></path></svg><!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#">Services</a></li> -->
+        <!-- <li><a href="#">Contact</a></li> -->
+        <!-- <li><a href="#">Feedback</a></li> -->
+      </ul>
+    </nav>
+    <!-- <div class="circle">1</div>
+    <div class="circle">2</div>
+    <div class="circle">3</div>
+    <div class="circle">4</div>
+    <div class="circle">5</div>
+    <div class="circle">6</div>
+    <div class="circle">7</div> -->
+    
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Day Picker</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+  }
+  body{
+    font-family: montserrat;
+    background-color: #ffffff;
+    background-image: url(pexels-vegan-liftz-2377165.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  nav{
+    background: #000000;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  /* a.active,a:hover{
+    background: #616161;
+    transition: .5s;
+  } */
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c2c2c;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #000000;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+  .calendar{
+    position: absolute;
+    top: 15px;
+    right: 83px;
+    cursor: pointer;
+  }
+  .active{
+    position: absolute;
+    padding: 0px 0px;
+    top: 0px;
+    right: 153px;
+    cursor: pointer;
+
+  }
+  .bell-icon{
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    cursor: pointer;
+  }
+  .circle{
+    width: 126px;
+    margin: 52px;
+    padding: 102px;
+    height: 34px;
+    /* display: flex;
+    flex-wrap: wrap;
+    text-align: center; */
+    float: left;
+    margin-right: 10px;
+    font-size: 45px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    border-radius: 196px;
+    background-color: #000000;
+    color: aliceblue;
+  }
+  .container
+  {
+    width: 530px;
+    height: 79px;
+    position: absolute;
+    top: 378px;
+    right: 723px;
+    background-color: #27312a;
+    border-radius: 10px;
+    color: aliceblue;
+
+  }
+  .container h1{
+    position: absolute;
+    right: 151px;
+    top: 22px;
+    cursor: pointer;
+  }
+  .recatangular
+  {
+    width: 530px;
+    height: 79px;
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    background-color: #333333;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+  .calendar:hover,.calendar.activeN{
+    fill: #26ee07;
+  }
+
+  .box-container{
+    border: 1px black;
+  }
+  .box {
+    width: 861px;
+    height: 36px;
+    border: 2px solid #ccc;
+    padding: 94px;
+    margin: 24px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-icon {
+    width: 200px;
+    height: 52px;
+    background-color:#26ee07;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    flex: 1;
+}
+
+.dropdown-select {
+    width: 186px;
+    padding: 5px;
+    height: 50px;
+    font-size: 20px;
+    
+}
+
+.dropdown-indicator {
+    width: 200px;
+    height: 47px;
+    margin-right:10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: -42px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+        .day-picker {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 126px;
+            vertical-align: middle;
+        }
+
+        .day-icon {
+            width: 173px;
+            height: 143px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            border-radius: 106px;
+            font-size: 56px;
+            margin: auto;
+            display: flex;
+            padding: 75px;
+            flex-wrap: wrap;
+            padding-top: 41px;
+            border: 2px red;
+            
+        }
+        /* .days
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 126px;
+            margin: 10px;
+            
+
+        } */
+        .days h1{
+            letter-spacing: 192px;
+            font-size: 56px;
+            position: absolute;
+            top: 113px;
+            right: 49px;
+        }
+
+        .day-icon:hover {
+            background-color: #26ee07;
+        }
+         .h1 h1{
+            position: absolute;
+            top: 45%;
+            right: 45%;
+        }
+        .rectangular-box{
+            border: 1px black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 489px;
+            right: 1236px;
+
+        }
+    </style>
+</head>
+<body>
+        <div class="day-picker">
+        <div class="day-icon" id="monday" onclick="selectDay('Monday')">1 </div>
+        <div class="day-icon" id="tuesday" onclick="selectDay('Tuesday')">2</div>
+        <div class="day-icon" id="wednesday" onclick="selectDay('Wednesday')">3</div>
+        <div class="day-icon" id="thursday" onclick="selectDay('Thursday')">4</div>
+        <div class="day-icon" id="friday" onclick="selectDay('Friday')">5</div>
+        <div class="day-icon" id="saturday" onclick="selectDay('Saturday')">6</div>
+        <div class="day-icon" id="sunday" onclick="selectDay('Sunday')">7</div>
+    </div>
+    <div class="days">
+        <h1>SMTWTFS</h1>
+    </div>
+
+    <script>
+        function selectDay(day) {
+            alert('You selected ' + day);
+            // You can perform any action here with the selected day
+        }
+        function updateLunchIndicator(select) {
+        const indicator = document.getElementById("lunch-indicator");
+        const selectedOption = select.options[select.selectedIndex].value;
+
+        if (selectedOption === "biriyani") {
+            indicator.textContent = "Moderately unhealthy";
+            
+        } else {
+            indicator.textContent = "Healthy";
+        }
+    }
+
+    function updateIndicator(select, message) {
+        const indicatorId = select.parentNode.querySelector('.dropdown-indicator').id;
+        const indicator = document.getElementById(indicatorId);
+        indicator.textContent = message;
+    }
+    const indicator = document.getElementById("dinner-indicator");
+        const selectedOption = select.options[select.selectedIndex].value;
+
+        if (selectedOption === "Noodles") {
+            indicator.textContent = "Unhealthy";
+        } else {
+            indicator.textContent = "Healthy";
+        }
+const indicator1 = document.getElementById("breakfast-indicator");
+        const selectedOption1 = select.options[select.selectedIndex].value;
+
+        if (selectedOption1 === "idli") {
+            indicator1.textContent = "Healthy";
+        } else {
+            indicator1.textContent = "Healthy";
+        }
+    </script>
+</body>
+</html>
+    
+    <!-- <div class="recatangular">
+    </div> -->
+    <div class="h1">
+        <h1>Log Your Meals</h1>
+    </div>
+    <div class="rectangular-box">
+        <h1>Monday</h1>
+        <div class="box">
+            <div class="meal-icon">Breakfast</div>
+            <div class="dropdown">
+                <select class="dropdown-select" onchange="updateIndicator(this, 'Healthy')">
+                    <option value="breakfast">Insert Breakfast</option>
+                    <option value="idli">Idli</option>
+                    <option value="dosa">Dosa</option>
+                    <!-- Add more breakfast options here -->
+                </select>
+                <div class="dropdown-indicator" id="breakfast-indicator">Result</div>
+            </div>
+        </div>
+    
+        <div class="box">
+            <div class="meal-icon">Lunch</div>
+            <div class="dropdown">
+                <select class="dropdown-select" onchange="updateLunchIndicator(this)">
+                    <option value="lunch">Insert Lunch</option>
+                    <option value="biriyani">Biriyani</option>
+                    <option value="rice">Rice</option>
+                    <option value="dal">Dal</option>
+                    <!-- Add more lunch options here -->
+                </select>
+                <div class="dropdown-indicator" id="lunch-indicator">Result</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="meal-icon">Dinner</div>
+            <div class="dropdown">
+                <select class="dropdown-select" onchange="updatedinnerIndicator(this)">
+                    <option value="dinner">Insert Dinner</option>
+                    <option value="chapati">Chapati</option>
+                    <option value="noodles">Noodles</option>
+                    <!-- Add more lunch options here -->
+                </select>
+                <div class="dropdown-indicator" id="dinner-indicator">Result</div>
+            </div>
+        </div>   
+    
+        <div class="box">
+            <div class="meal-icon">Snacks</div>
+            <div class="dropdown">
+                <select class="dropdown-select" onchange="updateIndicator(this, 'Unhealthy')">
+                    <option value="dinner">Insert Snacks</option>
+                    <option value="tea">Tea</option>
+                    <option value="biscuits">Biscuits</option>
+                    <!-- Add snack options here -->
+                </select>
+                <div class="dropdown-indicator" id="snacks-indicator">Result</div>
+            </div>
+        </div>
+    
+    </div>
+    <section></section>
+  </body>
+ 
+
+</html>
